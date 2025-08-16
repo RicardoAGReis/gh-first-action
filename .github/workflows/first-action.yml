@@ -1,0 +1,19 @@
+# Give to the Workflow a name:
+name: First Workflow
+# Define when this Workflow should be executed (events):
+on: workflow_dispatch # Manual trigger
+# Define work to be done by this Workflow (jobs):
+jobs:
+  # Job custom name (below jobs with 1 tab - 2 spaces):
+  first-job:
+    # Define the environment you want to use (below job name with 2 tabs - 4 spaces)
+    # https://docs.github.com/pt/actions/concepts/runners/github-hosted-runners
+    # https://github.com/actions/runner-images
+    runs-on: ubuntu-latest
+    # Define the steps that should be executed (below the environment with 2 tabs - 4 spaces):
+    steps:
+      # List of steps (below steps with 3 tabs - 6 spaces):
+      - name: Print greating
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
