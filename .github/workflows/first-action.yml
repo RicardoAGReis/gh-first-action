@@ -14,6 +14,6 @@ jobs:
     steps:
       # List of steps (below steps with 3 tabs - 6 spaces):
       - name: Print greating
-        run: echo "Hello World!"
+        run: echo "Hello World - This is my first GitHub Action!"
       - name: Print goodbye
-        run: echo "Done - bye!"
+        run: echo "Well done, you did it - bye!"
